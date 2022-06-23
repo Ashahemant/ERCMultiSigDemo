@@ -1,0 +1,835 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "ERCToken2": {
+        "src": "contracts\\ERCToken2.sol:3",
+        "version": {
+          "withMetadata": "dbf97046773fb428f62a976236d8a11da03df4c013b673a687668522c7f12685",
+          "withoutMetadata": "80805b812a8de792d568d556e50bc232a81d350f3dc74fee66109b860f3d4509",
+          "linkedWithoutMetadata": "80805b812a8de792d568d556e50bc232a81d350f3dc74fee66109b860f3d4509"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath"
+        ],
+        "methods": [
+          "initialize(uint256)",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "approve(address,uint256)",
+          "allowance(address,address)",
+          "transferFrom(address,address,uint256)",
+          "transferTo(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "name",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_string_storage",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:6"
+            },
+            {
+              "label": "symbol",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_string_storage",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:7"
+            },
+            {
+              "label": "decimals",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint8",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:8"
+            },
+            {
+              "label": "balances",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:14"
+            },
+            {
+              "label": "allowed",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:16"
+            },
+            {
+              "label": "totalSupply_",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:18"
+            },
+            {
+              "label": "numTokens1",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:19"
+            },
+            {
+              "label": "check",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:20"
+            },
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_address",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SafeMath": {
+        "src": "contracts\\ERCToken2.sol:107",
+        "version": {
+          "withMetadata": "a2f1042a8fa47e49c3ba43a94021b21f4201458750613560a768187b663b43b9",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "ERCToken2": {
+        "src": "contracts\\ERCToken2.sol:3",
+        "version": {
+          "withMetadata": "575911230a0f2563933336e911b633ebcee2507081b209a017a200f034c7bff3",
+          "withoutMetadata": "80805b812a8de792d568d556e50bc232a81d350f3dc74fee66109b860f3d4509",
+          "linkedWithoutMetadata": "80805b812a8de792d568d556e50bc232a81d350f3dc74fee66109b860f3d4509"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath"
+        ],
+        "methods": [
+          "initialize(uint256)",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "approve(address,uint256)",
+          "allowance(address,address)",
+          "transferFrom(address,address,uint256)",
+          "transferTo(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "name",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_string_storage",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:6"
+            },
+            {
+              "label": "symbol",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_string_storage",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:7"
+            },
+            {
+              "label": "decimals",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint8",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:8"
+            },
+            {
+              "label": "balances",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:14"
+            },
+            {
+              "label": "allowed",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:16"
+            },
+            {
+              "label": "totalSupply_",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:18"
+            },
+            {
+              "label": "numTokens1",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:19"
+            },
+            {
+              "label": "check",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:20"
+            },
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_address",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SafeMath": {
+        "src": "contracts\\ERCToken2.sol:106",
+        "version": {
+          "withMetadata": "297c4e60d4eb26dbc1d11295ce47edd6a0a45152a68f34ba42db6fc97d958a92",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "ERCToken2": {
+        "src": "contracts\\ERCToken2.sol:3",
+        "version": {
+          "withMetadata": "67161c0bad0cb878d9b19e3095897d66fbee1f569f57fe77561f60f7ae09e972",
+          "withoutMetadata": "e96103baf17bdae96d9ca30d7eab1d59e9462fc64e5356fcf16774ca2be20fea",
+          "linkedWithoutMetadata": "e96103baf17bdae96d9ca30d7eab1d59e9462fc64e5356fcf16774ca2be20fea"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath"
+        ],
+        "methods": [
+          "initialize(uint256)",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "approve(address,uint256)",
+          "allowance(address,address)",
+          "transferFrom(address,address,uint256)",
+          "transferTo(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "name",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_string_storage",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:6"
+            },
+            {
+              "label": "symbol",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_string_storage",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:7"
+            },
+            {
+              "label": "decimals",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint8",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:8"
+            },
+            {
+              "label": "owner",
+              "offset": 1,
+              "slot": "2",
+              "type": "t_address",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:9"
+            },
+            {
+              "label": "balances",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:14"
+            },
+            {
+              "label": "allowed",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:16"
+            },
+            {
+              "label": "totalSupply_",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:18"
+            },
+            {
+              "label": "numTokens1",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:19"
+            },
+            {
+              "label": "check",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:20"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SafeMath": {
+        "src": "contracts\\ERCToken2.sol:106",
+        "version": {
+          "withMetadata": "c575b033da5922cf2d25898e8e6220288929ab6963af4bb80e26fee540eee019",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "ERCToken2": {
+        "src": "contracts\\ERCToken2.sol:3",
+        "version": {
+          "withMetadata": "e8cb070005409f92397188a02b5059eadb19bc7d29b6c02ada41b87b47e3f468",
+          "withoutMetadata": "00a65a9d72eb6f915e751777790f4bb765e24bfe871e1df16d4d36e92ff1297a",
+          "linkedWithoutMetadata": "00a65a9d72eb6f915e751777790f4bb765e24bfe871e1df16d4d36e92ff1297a"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath"
+        ],
+        "methods": [
+          "initialize(uint256)",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "approve(address,uint256)",
+          "allowance(address,address)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "name",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_string_storage",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:6"
+            },
+            {
+              "label": "symbol",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_string_storage",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:7"
+            },
+            {
+              "label": "decimals",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint8",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:8"
+            },
+            {
+              "label": "balances",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:13"
+            },
+            {
+              "label": "allowed",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:15"
+            },
+            {
+              "label": "totalSupply_",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:17"
+            },
+            {
+              "label": "numTokens1",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:18"
+            },
+            {
+              "label": "check",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:19"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SafeMath": {
+        "src": "contracts\\ERCToken2.sol:91",
+        "version": {
+          "withMetadata": "d4d51bc76fd25b99eda601be4532d9d96a44a948a8e8a01a5fb63283b4d6280a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "ERC20Basic": {
+        "src": "contracts\\ERC20Basic.sol:3",
+        "version": {
+          "withMetadata": "d3b1db11930efd4a8e0469d28586254cebd3200699886b7aae90a5d07a042048",
+          "withoutMetadata": "b4172414c70f83d7cdb4d782e55373fde4ae332e2150a41b2666d80642d1df0d",
+          "linkedWithoutMetadata": "b4172414c70f83d7cdb4d782e55373fde4ae332e2150a41b2666d80642d1df0d"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath"
+        ],
+        "methods": [
+          "initialize(uint256)",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "approve(address,uint256)",
+          "allowance(address,address)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "name",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_string_storage",
+              "contract": "ERC20Basic",
+              "src": "contracts\\ERC20Basic.sol:10"
+            },
+            {
+              "label": "symbol",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_string_storage",
+              "contract": "ERC20Basic",
+              "src": "contracts\\ERC20Basic.sol:11"
+            },
+            {
+              "label": "decimals",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint8",
+              "contract": "ERC20Basic",
+              "src": "contracts\\ERC20Basic.sol:12"
+            },
+            {
+              "label": "balances",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20Basic",
+              "src": "contracts\\ERC20Basic.sol:13"
+            },
+            {
+              "label": "allowed",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20Basic",
+              "src": "contracts\\ERC20Basic.sol:15"
+            },
+            {
+              "label": "totalSupply_",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "ERC20Basic",
+              "src": "contracts\\ERC20Basic.sol:17"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SafeMath": {
+        "src": "contracts\\ERCToken2.sol:91",
+        "version": {
+          "withMetadata": "d4d51bc76fd25b99eda601be4532d9d96a44a948a8e8a01a5fb63283b4d6280a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERCToken2": {
+        "src": "contracts\\ERCToken2.sol:3",
+        "version": {
+          "withMetadata": "e8cb070005409f92397188a02b5059eadb19bc7d29b6c02ada41b87b47e3f468",
+          "withoutMetadata": "00a65a9d72eb6f915e751777790f4bb765e24bfe871e1df16d4d36e92ff1297a",
+          "linkedWithoutMetadata": "00a65a9d72eb6f915e751777790f4bb765e24bfe871e1df16d4d36e92ff1297a"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath"
+        ],
+        "methods": [
+          "initialize(uint256)",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "approve(address,uint256)",
+          "allowance(address,address)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "name",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_string_storage",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:6"
+            },
+            {
+              "label": "symbol",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_string_storage",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:7"
+            },
+            {
+              "label": "decimals",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint8",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:8"
+            },
+            {
+              "label": "balances",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:13"
+            },
+            {
+              "label": "allowed",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:15"
+            },
+            {
+              "label": "totalSupply_",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:17"
+            },
+            {
+              "label": "numTokens1",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:18"
+            },
+            {
+              "label": "check",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256",
+              "contract": "ERCToken2",
+              "src": "contracts\\ERCToken2.sol:19"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    }
+  ]
+}
